@@ -17,3 +17,8 @@ app.listen(PORT, () => {
 
 const dbConnect = require('./database/database');
 dbConnect();
+
+app.get("/", (req,res) => {
+    res.send(`<h1>hello ji</h1>`);
+ })
+ 
